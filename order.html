@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order - Penny Juice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="menustyles.css">
+    <link rel="stylesheet" type="text/css" href="orderstyles.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="menu-bar">
+            <div class="menu-button">order</div>
+            <h3>Penny Juice</h3>
+        </header>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html" class="active">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="order-content">
+            <section class="order-form-section">
+                <form id="juice-order-form">
+                    <div class="form-group">
+                        <label for="juice-select">Select Your Juice</label>
+                        <select id="juice-select">
+                            <option>Green Machine</option>
+                            <option>Orange Juice</option>
+                            <option>Ghostbusters</option>
+                            <option>Tropical Tango</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="size">Size</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="size" value="small" checked> 12oz</label>
+                            <label><input type="radio" name="size" value="large"> 24oz</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Special Requests</label>
+                        <textarea id="notes" rows="3" placeholder="No ice, extra ginger, etc..."></textarea>
+                    </div>
+
+                    <button type="button" class="submit-order">Add to Cart</button>
+                </form>
+            </section>
+
+            <aside class="order-summary">
+                <div class="summary-card">
+                    <h4>Your Basket</h4>
+                    <hr>
+                    <div class="summary-item">
+                        <span>Green Machine (24oz)</span>
+                        <span>$8.50</span>
+                    </div>
+                    <div class="summary-total">
+                        <strong>Total:</strong>
+                        <strong>$8.50</strong>
+                    </div>
+                    <button class="checkout-button">Proceed to Checkout</button>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+</body>
+</html>

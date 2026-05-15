@@ -1,0 +1,172 @@
+/* General Body Setup */
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 40px;
+}
+
+/* Expanded Desktop Container */
+#container {
+    width: 90%;          /* Uses most of the screen width */
+    max-width: 1100px;   /* Prevents it from getting too stretched on huge monitors */
+    background-color: #c5e08a;
+    border-radius: 50px;
+    padding: 40px;
+    border: 3px solid #333;
+    box-shadow: 10px 10px 0px #8ea65f; /* Added a little depth for desktop */
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    border-radius: 10px; /* keeps a clean modern look */
+}
+
+.slide.active {
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+#nav ul li a.active {
+    background-color: #333;
+    color: white;
+}
+/* Header Section */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+#header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#header h3 {
+    font-size: 2.5rem;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+#header h2 {
+    font-size: 1rem;
+    border: 2px solid #333;
+    border-radius: 25px;
+    padding: 12px 25px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Content Area - Using Flex for a Side-by-Side Look */
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Navigation Styling (Matches Menu Button) */
+#nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 0.9rem;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+#nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* CONTACT PAGE */
+
+#contact-section {
+    margin-left: 200px; /* keeps spacing aligned with nav */
+    padding: 20px;
+    max-width: 600px;
+}
+
+#contact-section h2 {
+    margin-bottom: 10px;
+}
+
+#contact-section p {
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#contact-form button {
+    padding: 10px;
+    background-color: #4CAF50; /* adjust if your site uses a different color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #45a049;
+}
+/* Navigation Grid - 6 Buttons in a Single Row */

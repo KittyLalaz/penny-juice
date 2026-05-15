@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Penny Juice - Healthy Lifestyle Website</title>
+    <meta name="Keywords" content="Las Vegas. Healthy Lifestyle, Juices">
+    <meta name="author" content="Cindy Nguyen">
+    <meta name="viewpoint" content="width=device-wdith, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="indexstyles.css">
+</head>
+<script>
+let currentSlide = 0;
+let slides = [];
+
+window.onload = function () {
+    slides = document.querySelectorAll(".slide");
+    showSlide(currentSlide);
+};
+
+function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[index].classList.add("active");
+}
+
+function changeSlide(direction) {
+    currentSlide += direction;
+
+    if (currentSlide < 0) currentSlide = slides.length - 1;
+    if (currentSlide >= slides.length) currentSlide = 0;
+
+    showSlide(currentSlide);
+}
+</script>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>welcome!</h1>
+            <h2>checkout</h2>
+            <h3>Penny Juice</h3>
+        </div>     
+        <div id="content">
+            <div id="nav">
+                <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            </div>
+            <div class="slider-image">
+                <div class="slideshow-container">
+                    <img class="slide active" src="juice1.jpg" alt="Juice 1">
+                    <img class="slide" src="juice2.jpg" alt="Juice 2">
+                    <img class="slide" src="juice3.PNG" alt="Juice 3">
+
+                    <button class="prev" onclick="changeSlide(-1)">❮</button>
+                    <button class="next" onclick="changeSlide(1)">❯</button>
+                </div>
+            </div>
+            <div id="summary">
+                <p>Welcome to Penny Juice, where great taste does not have to be complicated. We are all about fresh, flavorful drinks made from real ingredients and served with a smile. Whether you are in the mood for something classic or feeling adventurous, there is always a blend here worth trying.
+
+                At Penny Juice, we keep things simple. No shortcuts, just quality you can taste in every sip. It is the kind of place you can stop by anytime, whether you are cooling off, grabbing a quick refresh, or just treating yourself.
+
+                Take a look around and see what catches your eye. You might just find your new favorite.</p>
+            </div>    
+
+        </div>
+        
+    </div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
